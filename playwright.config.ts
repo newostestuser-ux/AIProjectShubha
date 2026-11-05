@@ -11,7 +11,7 @@ export default defineConfig({
   reporter:[
     ['list'],
     ['html',{ open: "never", outputFolder: "reports" }],
-    ['allure playwright',{open:"never", outputFolder:"allure-reports"}]
+    ['allure-playwright',{open:"never", outputFolder:"allure-reports"}]
   ],
   use:{
     baseURL:process.env.WEB_APP_URL,
